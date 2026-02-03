@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
-    "dev": "nodemon src/app.js -e js,hbs"
+    "dev": "nodemon functions/index.js -e js,hbs",
+    "sass": "sass --watch public/sass:public/css"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "postman-request": "^2.88.1-postman.33"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "sass": "^1.97.3"
   }
 }

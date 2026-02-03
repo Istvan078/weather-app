@@ -1,0 +1,63 @@
+// BUTTON STYLES
+.btn {
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: inherit;
+  font-weight: 600;
+  transition: all 0.3s;
+  color: $color-grey-light-1;
+
+  span {
+    line-height: 0;
+  }
+
+  &--primary {
+    background-color: $color-purple-dark;
+    &:hover {
+      background-color: $color-secondary-dark;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-purple-dark;
+
+    &:hover {
+      background-color: $color-purple-light;
+    }
+    align-items: center;
+  }
+
+  &--tertiary {
+    background-color: $color-pink-dark;
+
+    &:hover {
+      background-color: $color-pink-light;
+    }
+  }
+
+  &--light {
+    background-color: $color-white;
+    color: $color-black;
+    border: 1px solid rgba(17, 24, 39, 0.12);
+
+    &:hover {
+      background-color: $color-grey-light-2;
+    }
+  }
+
+  &-icon {
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor;
+  }
+
+  &-icon-btn {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    align-items: center;
+    column-gap: 0.8rem;
+    justify-items: center;
+  }
+}

@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+  // RESPONSIVE FONT SIZING //
+  @media only screen and (max-width: $bp-large) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%; // 1rem = 8px
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 43.75%; // 1rem = 7px
+  }
+}
+
+body {
+  color: #333333;
+  font-family: "arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+}
